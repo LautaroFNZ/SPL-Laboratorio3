@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo Parcial</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="spinner" id="spinner">
+        <img src="spinner.gif" class="iSpinner"> 
+    </div>
+    <div>
+        <form id="FrmDatos" class="FrmData">
+            <div id="presentacion">
+                <h1>Formulario Datos</h1>
+            </div>
+            
+            <div class="Filtro">
+                <label for="">Filtrar por:</label>
+                <select  id="filtroTipo">
+                    <option value="vTodos">Todos</option>
+                    <option value="vAereo">Aereo</option>
+                    <option value="vTerrestre">Terrestre</option>
+                </select>
+            </div>
+
+            <table>
+                <thead> 
+                <tr>
+                    <td>ID</td>
+                    <td>Nombre</td>
+                    <td>Año Fab</td>
+                    <td>Vel Max</td>
+                    <td>Alt Max</td>
+                    <td>Autonomia</td>
+                    <td>Cant Pue</td>
+                    <td>Cant Rue</td>
+                    <td>Modificar</td>
+                    <td>Eliminar</td>
+                </tr>
+            </thead>
+            <tbody id="vehiculo-container">
+                
+            </tbody>
+            </table>
+    
+            <button id="btnAgregar">Agregar</button>
+    
+            </form>
+        </div>
+
+        <div id="FrmABM" class="FrmABM">
+            <form class="FrmABM">
+                <h1 id="titulo-abm">Formulario ABM</h1>
+    
+                <div class="inputs">
+                    
+
+
+                    <input type="number" id="txtId" placeholder="Ingrese su id:" readonly="true">
+                    <input type="text" id="txtModelo" placeholder="Ingrese su modelo:">
+                    <input type="number" id="txtAnioFab" placeholder="Ingrese su año de fabricacion:">
+                    <input type="number" id="txtVelMax" placeholder="Ingrese su velocidad maxima:">
+
+                    <select id="SelectTipo">
+                        <option value="tVacio" selected="selected" disabled="disabled">Seleccione su Tipo</option>
+                        <option value="tAereo">Aereo</option>
+                        <option value="tTerrestre">Terrestre</option>
+                </select>
+
+                    <input type="number" id="txtAM" placeholder="Ingrese su altura maxima:">
+                    <input type="number" id="txtAutonomia" placeholder="Ingrese su autonomia:">
+                    <input type="number" id="txtCantPue" placeholder="Ingrese cantidad de puertas:">
+                    <input type="number" id="txtCantRue" placeholder="Ingrese su cantidad de ruedas:">
+                                    
+                    <button id="btnAceptar">Aceptar</button> 
+                    
+                    <button id="btnCancelar">Cancelar</button>
+                </div>
+    
+        <script src="index.js"></script>
+    </body>
+    </html>
